@@ -28,6 +28,8 @@ In the [forwarding](./exercises/forwarding) folder, you will find an example of 
  
 ## The Assignment: Filtering suspicious traffic
 
+In the [filter](./exercises/filter) folder, you will see instructions on how to extend the forwarding functionality to detect and mark suspicious packets. To submit the assignment, email your `filter.p4` and `mycontroller.py` files to the instructor.
+
 ## P4 Documentation and Extra Resources
 
 The documentation for P4_16 and P4Runtime is available [here](https://p4.org/specs/)
