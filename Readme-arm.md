@@ -1,9 +1,9 @@
 # Setup Guide for Mac Silicon Users
 
-Currently, VirtualBox does not have a production-ready release for Mac Silicon and also there are no arm releases for P4 binaries. 
+Currently, VirtualBox does not have a production-ready release for arm and also there are no arm releases for P4 binaries. 
 So, to setup an Ubuntu VM and use P4 compiler on the Mac Silicon computers you need to:
 - Use VMWare Fusion for creating VMs
-- Build the P4 binaries
+- Build the P4 binaries on an arm VM
 
 ## Setup Guide
 
@@ -15,7 +15,7 @@ brew install --cask vagrant-vmware-utility
 vagrant plugin install vagrant-vmware-desktop
 ```
 
-4. Set the following environment variable in your shell so that `silicon.Vagrantfile` is used:
+4. Set the following environment variable in your shell so that `arm.Vagrantfile` is used:
 ```
 export VAGRANT_VAGRANTFILE=silicon.Vagrantfile
 ```

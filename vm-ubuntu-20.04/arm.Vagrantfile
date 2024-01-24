@@ -25,8 +25,8 @@ Vagrant.configure(2) do |config|
     dev.vm.provision "file", source: "patches/mininet-dont-install-python2-2022-apr.patch", destination: "/home/vagrant/patches/mininet-dont-install-python2-2022-apr.patch"
     dev.vm.provision "file", source: "clean.sh", destination: "/home/vagrant/clean.sh"
     dev.vm.provision "shell", inline: "chmod 755 /home/vagrant/clean.sh"
-    dev.vm.provision "shell", path: "root-dev-bootstrap.sh"
-    dev.vm.provision "shell", path: "root-common-bootstrap.sh"
+    dev.vm.provision "shell", path: "arm/root-dev-bootstrap_arm.sh"
+    dev.vm.provision "shell", path: "arm/root-common-bootstrap_arm.sh"
     dev.vm.provision "shell", privileged: false, path: "user-dev-bootstrap.sh"
     dev.vm.provision "shell", privileged: false, path: "user-common-bootstrap.sh"
   end
