@@ -9,7 +9,9 @@ To complete the exercises, you will need to either build a
 virtual machine or install several dependencies.
 
 To build the virtual machine:
-- Install [Vagrant](https://vagrantup.com) and [VirtualBox](https://virtualbox.org)
+- Install [VirtualBox](https://virtualbox.org)
+  > **Apple Silicon Users**: Follow this [guide](./Readme-arm.md)
+- Install [Vagrant](https://vagrantup.com)
 - Clone the repository
 - Before proceeding, ensure that your system has at least 12 Gbytes of free disk space, otherwise the installation can fail in unpredictable ways.
 - `cd vm-ubuntu-20.04`
