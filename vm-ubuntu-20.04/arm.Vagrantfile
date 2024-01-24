@@ -14,7 +14,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "file", source: "p4_16-mode.el", destination: "/home/vagrant/p4_16-mode.el"
   config.vm.provision "file", source: "p4.vim",        destination: "/home/vagrant/p4.vim"
 
-  config.vm.define "dev", autostart: false do |dev|
+  config.vm.define "dev-arm", primary: true do |dev|
     dev.vm.provider "vmware_desktop" do |v|
       v.vmx['displayname'] = "P4 Tutorial Development" + Time.now.strftime(" %Y-%m-%d")
     end

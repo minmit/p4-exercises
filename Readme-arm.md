@@ -26,3 +26,7 @@ Now you can continue the [tutorial](./README.md).
 > Refer to this [link](https://gist.github.com/sbailliez/2305d831ebcf56094fd432a8717bed93) if you encountered problems when installing VMware or Vagrant.
 
 > Since there is no release of P4 compiler and runtime binary files for arm, they are built from source code on the Ubuntu VM, so, the execution of `vagrant up` takes much longer (about an hour on a Mac with M1 Pro).
+
+> Vagrant sync folder might not work so you may need to clone this repository on the VM again.
+> Note that you need to set `VAGRANT_VAGRANTFILE` variable or otherwise Vagrant uses
+> the `Vagrantfile` by default and you may end up working with different VM!
