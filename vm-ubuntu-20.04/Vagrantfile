@@ -4,7 +4,7 @@
 Vagrant.configure(2) do |config|
     config.vm.box = "bento/ubuntu-20.04"
   
-    config.vm.synced_folder '.', '/vagrant', disabled: true
+    config.vm.synced_folder '..', '/vagrant', disabled: false
     config.vm.hostname = "p4"
     config.vm.provision "file", source: "p4-logo.png",   destination: "/home/vagrant/p4-logo.png"
     config.vm.provision "file", source: "p4_16-mode.el", destination: "/home/vagrant/p4_16-mode.el"
