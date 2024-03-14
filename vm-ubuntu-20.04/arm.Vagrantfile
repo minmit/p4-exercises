@@ -8,7 +8,7 @@ Vagrant.configure(2) do |config|
     v.gui = false
   end
 
-  config.vm.synced_folder '..', '/vagrant', group: "sudo", disabled: false
+  config.vm.synced_folder '..', '/vagrant', disabled: false
   config.vm.hostname = "p4"
   config.vm.provision "file", source: "p4-logo.png",   destination: "/home/vagrant/p4-logo.png"
   config.vm.provision "file", source: "p4_16-mode.el", destination: "/home/vagrant/p4_16-mode.el"
