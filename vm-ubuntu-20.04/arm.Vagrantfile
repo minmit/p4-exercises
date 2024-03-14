@@ -5,10 +5,10 @@ Vagrant.configure(2) do |config|
   config.vm.box = "bento/ubuntu-20.04-arm64"
 
   config.vm.provider "vmware_desktop" do |v|
-    v.gui = true
+    v.gui = false
   end
 
-  config.vm.synced_folder '.', '/vagrant', disabled: true
+  config.vm.synced_folder '..', '/vagrant', group: "sudo", disabled: false
   config.vm.hostname = "p4"
   config.vm.provision "file", source: "p4-logo.png",   destination: "/home/vagrant/p4-logo.png"
   config.vm.provision "file", source: "p4_16-mode.el", destination: "/home/vagrant/p4_16-mode.el"
